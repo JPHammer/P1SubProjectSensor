@@ -11,6 +11,7 @@ int imOkWire = D44;
 int sensorNumGRP1 = D45;
 int sensorNumGRP2 = D46;
 int sensorErrorType = D47;
+int rxTxMegaNano = D48;
 
 //------------//------------//------------//------------//------------//------------//------------//
 //Global setup//Global setup//Global setup//Global setup//Global setup//Global setup//Global setup//
@@ -27,6 +28,7 @@ void setup() {
   sensorNumGRP2 == 0;
   sensorNumGRP2 == 0;
   sensorErrorType == 0;
+  rxTxMegaNano == 0;
 
   pinMode (sensor1HL, OUTPUT);
   pinMode (signal1HL, INPUT);
@@ -38,6 +40,7 @@ void setup() {
   pinMode (sensorNumGRP1, INPUT);
   pinMode (sensorNumGRP2, INPUT);
   pinMode (sensorErrorType, INPUT);
+  pinMode (rxTxMegaNano, OUTPUT);
 
 //----//----//----//----//----//----//----//----//----//----//----//----//----//----//----//----//----//
 //Main//Main//Main//Main//Main//Main//Main//Main//Main//Main//Main//Main//Main//Main//Main//Main//Main//
