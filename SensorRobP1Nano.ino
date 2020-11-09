@@ -7,10 +7,11 @@ int sensor2Anode = D4;
 int sensor2Katode = D5;
 int sensor3Anode = D6;
 int sensor3Katode = D7;
-int imOkWire = D8;
-int sensorNumGRP1 = D9;
-int sensorNumGRP2 = D10;
-int sensorErrorType = D11;
+int rxTxMegaNano = D8;
+int imOkWire = D9;
+int sensorNumGRP1 = D10;
+int sensorNumGRP2 = D11;
+int sensorErrorType = D12;
 
 //------------//------------//------------//------------//------------//------------//------------//
 //Global setup//Global setup//Global setup//Global setup//Global setup//Global setup//Global setup//
@@ -23,6 +24,7 @@ void setup() {
   sensor2Katode == 0;
   sensor3Anode == 0;
   sensor3Katode == 0;
+  rxTxMegaNano == 0;
   imOkWire == 0;
   sensorNumGRP1 == 0;
   sensorNumGRP2 == 0;
@@ -34,6 +36,7 @@ void setup() {
   pinMode (sensor2Katode, INPUT);
   pinMode (sensor3Anode, INPUT);
   pinMode (sensor3Katode, INPUT);
+  pinMode (rxTxMegaNano, INPUT);
   pinMode (imOkWire, OUTPUT);
   pinMode (sensorNumGRP1, OUTPUT);
   pinMode (sensorNumGRP2, OUTPUT);
